@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+data/*.xlsx
+data/*.xls
+data/*.csv
+results/*
+!results/.gitkeep
+!results/reference_metrics.json

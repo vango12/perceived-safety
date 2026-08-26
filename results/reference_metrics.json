@@ -1,0 +1,33 @@
+{
+  "data_description": "30 participants, 1,350 ratings from the supplied experiment_data.xlsx",
+  "speed_conversion": "omega = 1.5 * speed_scale_factor (rad/s)",
+  "features": ["omega", "distance", "distance^2", "omega*distance"],
+  "validation": "five-fold participant-independent outer cross-validation",
+  "population_oof": {
+    "records": 1350,
+    "mae": 1.1994969627,
+    "rmse": 1.5299045212,
+    "within_2_points": 0.8266666667,
+    "quadratic_weighted_kappa": 0.8135404514,
+    "rps": 0.0889389686,
+    "nll": 1.6418065781
+  },
+  "nine_shot_matched_population": {
+    "records": 1080,
+    "mae": 1.2133908495,
+    "rmse": 1.5444095557,
+    "within_2_points": 0.8268518519,
+    "quadratic_weighted_kappa": 0.8142904754,
+    "rps": 0.0897591284,
+    "nll": 1.6485893121
+  },
+  "nine_shot_personalized": {
+    "records": 1080,
+    "mae": 0.9807962641,
+    "rmse": 1.2648413311,
+    "within_2_points": 0.8898148148,
+    "quadratic_weighted_kappa": 0.8760844844,
+    "rps": 0.0719223137,
+    "nll": 1.4827048917
+  }
+}
